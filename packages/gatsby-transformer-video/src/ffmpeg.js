@@ -3,15 +3,7 @@ import { performance } from "perf_hooks"
 import { tmpdir } from "os"
 
 import { createContentDigest } from "gatsby-core-utils"
-import {
-  pathExists,
-  stat,
-  copy,
-  ensureDir,
-  unlink,
-  remove,
-  access,
-} from "fs-extra"
+import { pathExists, stat, copy, ensureDir, remove, access } from "fs-extra"
 import ffmpeg from "fluent-ffmpeg"
 import imagemin from "imagemin"
 import imageminGiflossy from "imagemin-giflossy"
